@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KotlinCalculator</string>
+    <string name="calculate_btn_txt">CALCULATE YOUR BMI</string>
+    <string name="ageTitle">AGE</string>
+    <string name="weightTitle">WEIGHT (kg)</string>
+    <string name="heightTitle">HEIGHT (cm)</string>
+    <string name="femaleString">Female</string>
+    <string name="maleString">Male</string>
+</resources>
