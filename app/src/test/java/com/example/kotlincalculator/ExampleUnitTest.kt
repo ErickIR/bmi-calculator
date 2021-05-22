@@ -17,8 +17,8 @@ class BmiCalculatorTest {
 
         val bmiCalculator = BmiCalculator()
 
-        val result: Double = bmiCalculator.Calculate(weight, height)
+        val result: Double = bmiCalculator.calculateBmi(weight, height)
 
-        Assert.assertEquals(22.904305011993433, result, 0.0043)
+        assertEquals(22.904305011993433, result, 0.0043)
     }
 }

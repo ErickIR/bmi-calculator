@@ -86,7 +86,7 @@
                 android:layout_gravity="center|bottom"
                 android:text="@string/heightTitle"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/titleColor" />
 
@@ -95,7 +95,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center|bottom"
-                android:text="170"
                 android:textAlignment="center"
                 android:textSize="50sp"
                 android:textStyle="bold"
@@ -117,7 +116,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
-        android:layout_margin="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/card_background"
         app:layout_constraintHorizontal_weight="1"
@@ -138,7 +138,7 @@
                 android:layout_gravity="center|bottom"
                 android:text="@string/weightTitle"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/titleColor" />
 
@@ -147,7 +147,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center|bottom"
-                android:text="84kg"
                 android:textAlignment="center"
                 android:textSize="50sp"
                 android:textStyle="bold"
@@ -169,7 +168,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
-        android:layout_margin="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
         android:padding="10dp"
         app:cardBackgroundColor="@color/card_background"
         app:layout_constraintHorizontal_weight="1"
@@ -189,7 +189,7 @@
                 android:layout_gravity="center|bottom"
                 android:text="@string/ageTitle"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/titleColor" />
             <TextView
@@ -197,7 +197,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center|bottom"
-                android:text="23"
                 android:textAlignment="center"
                 android:textSize="50sp"
                 android:textStyle="bold"
@@ -216,18 +215,40 @@
 
     <Button
         android:id="@+id/btnCalculate"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+        android:padding="5dp"
+        android:layout_marginHorizontal="15dp"
         android:background="@drawable/calculate_btn"
         android:onClick="calculateBMI"
+        android:textAlignment="center"
         android:text="@string/calculate_btn_txt"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewWeight" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/calculate_btn"
+        android:onClick="calculateBMI"
+        android:text="@string/go_to_history"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewWeight" />
+        app:layout_constraintTop_toTopOf="@id/btnCalculate"
+        app:layout_constraintBottom_toBottomOf="@id/btnCalculate"
+        app:layout_constraintStart_toEndOf="@id/btnCalculate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

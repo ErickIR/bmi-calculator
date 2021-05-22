@@ -11,11 +11,11 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#0B0A24</color>
     <color name="colorAccent">#19ffd6</color>
-    <color name="titleColor">#484a5a</color>
+    <color name="titleColor">#8D8E99</color>
     <color name="background">#16172e</color>
     <color name="card_background">#202137</color>
     <color name="selected_card_background">#383960</color>
-
+    <color name="strokeColor">#8D8E99</color>
     <color name="stepper">#1C1D34</color>
     <color name="tint">#40aea7</color>
 </resources>

@@ -2,8 +2,11 @@
     <string name="app_name">KotlinCalculator</string>
     <string name="calculate_btn_txt">CALCULATE YOUR BMI</string>
     <string name="ageTitle">AGE</string>
-    <string name="weightTitle">WEIGHT (kg)</string>
+    <string name="weightTitle">WEIGHT (lb)</string>
     <string name="heightTitle">HEIGHT (cm)</string>
     <string name="femaleString">Female</string>
     <string name="maleString">Male</string>
+    <string name="go_to_history">GO TO HISTORY</string>
+    <string name="date_template">${0}-${1}-${2}</string>
+    <string name="results_title">Your Results</string>
 </resources>
