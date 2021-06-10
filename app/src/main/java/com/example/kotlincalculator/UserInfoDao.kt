@@ -13,5 +13,5 @@ interface UserInfoDao {
     suspend fun insertUserInfo(vararg user: UserInfo)
 
     @Query("SELECT * FROM user_info ORDER BY id DESC LIMIT 1 ")
-    suspend fun getLastMeasurement(): UserInfo
+    suspend fun getLastMeasurement(): UserInfo?
 }
