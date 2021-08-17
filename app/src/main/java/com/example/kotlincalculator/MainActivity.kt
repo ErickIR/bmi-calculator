@@ -137,7 +137,8 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch {
             println("Calculate weight loss started")
             val lastMeasurement = db.userDao().getLastMeasurement()
-            weightDiff = lastMeasurement.weight - weight
+            val lastWeight: Double = lastMeasurement?.weight ?: 0.0
+            weightDiff = lastWeight - weight
             isWeightLoss = weightDiff > 0
             println("Calculate weight loss finished")
             println("Save info in userInfo start")
