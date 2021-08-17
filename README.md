@@ -3,9 +3,9 @@ BMI Calculator App made In Kotlin for Android.
 
 ## To-Dos
 
- - [ ] Calculate BMI based on the user input.
- - [ ] Save results on a local database.
- - [ ] Display statistics of preivous results.
+ - [x] Calculate BMI based on the user input.
+ - [x] Save results on a local database.
+ - [x] Display statistics of preivous results.
  - [ ] Reset all statistics data.
 
 ## Useful resources
